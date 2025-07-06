@@ -4,7 +4,7 @@
 
 ---
 
-### 🛠️ Pré-requisitos antes de começar:
+### 🛠️ Pré-requisitos antes de começar
 
 - Node.js instalado
 
@@ -27,7 +27,7 @@ nest new projeto-tarefas
 
 ## 🗓️ Dia 1 – Introdução ao Nest.js
 
-### 📚 Conteúdo:
+### 📚 Conteúdo – Dia 1
 
 - O que é Nest.js e por que usá-lo?
 
@@ -37,7 +37,7 @@ nest new projeto-tarefas
 
 - Primeira execução de um projeto
 
-### 🔧 Atividades:
+### 🔧 Atividades - Dia 1
 
 - Instalar o Nest CLI e criar projeto com `nest new`
 
@@ -45,7 +45,7 @@ nest new projeto-tarefas
 
 - Rodar o servidor: `npm run start:dev`
 
-### 🧪 Exercício:
+### 🧪 Exercício - Dia 1
 
 Adicionar um `console.log()` no `main.ts` para verificar o ambiente.
 
@@ -53,7 +53,7 @@ Adicionar um `console.log()` no `main.ts` para verificar o ambiente.
 
 ## 🗓️ Dia 2 – Controladores (Controllers)
 
-### 📚 Conteúdo:
+### 📚 Conteúdo - Dia 2
 
 - O que são controladores
 
@@ -61,7 +61,7 @@ Adicionar um `console.log()` no `main.ts` para verificar o ambiente.
 
 - Rotas e parâmetros de rota
 
-### 🔧 Atividades:
+### 🔧 Atividades - Dia 2
 
 - Criar um controlador `tarefas.controller.ts`:
 
@@ -71,7 +71,7 @@ nest g controller tarefas
 
 - Criar métodos `GET /tarefas`, `GET /tarefas/:id`
 
-### 🧪 Exercício:
+### 🧪 Exercício - Dia 2
 
 Adicionar mais uma rota: `GET /tarefas/status/:status`
 
@@ -79,7 +79,7 @@ Adicionar mais uma rota: `GET /tarefas/status/:status`
 
 ## 🗓️ Dia 3 – Serviços (Services)
 
-### 📚 Conteúdo:
+### 📚 Conteúdo - Dia 3
 
 - O que são serviços
 
@@ -87,7 +87,7 @@ Adicionar mais uma rota: `GET /tarefas/status/:status`
 
 - Separando a lógica de negócio
 
-### 🔧 Atividades:
+### 🔧 Atividades - Dia 3
 
 Criar serviço `tarefas.service.ts`:
 
@@ -97,7 +97,7 @@ nest g service tarefas
 
 - Mover lógica de listagem de tarefas para o serviço
 
-### 🧪 Exercício:
+### 🧪 Exercício - Dia 3
 
 Criar um método `getTarefaPorId(id: string)` no serviço e usá-lo no controller
 
@@ -105,7 +105,7 @@ Criar um método `getTarefaPorId(id: string)` no serviço e usá-lo no controlle
 
 ## 🗓️ Dia 4 – DTOs e Tipagem
 
-### 📚 Conteúdo:
+### 📚 Conteúdo - Dia 4
 
 - Criando interfaces ou classes para tipos
 
@@ -113,13 +113,13 @@ Criar um método `getTarefaPorId(id: string)` no serviço e usá-lo no controlle
 
 - Validação básica de dados com TypeScript
 
-### 🔧 Atividades:
+### 🔧 Atividades - Dia 4
 
 - Criar DTO `create-tarefa.dto.ts` com `titulo` e `descricao`
 
 - Criar tipo `Tarefa` com status enum
 
-### 🧪 Exercício:
+### 🧪 Exercício - Dia 4
 
 🧪 Exercício:
 Adicionar lógica para `POST /tarefas` com DTO
@@ -128,7 +128,7 @@ Adicionar lógica para `POST /tarefas` com DTO
 
 ## 🗓️ Dia 5 – Injeção de dependência e boas práticas
 
-### 📚 Conteúdo:
+### 📚 Conteúdo - Dia 5
 
 - Injeção de serviços com o `constructor()`
 
@@ -136,11 +136,11 @@ Adicionar lógica para `POST /tarefas` com DTO
 
 - Criar status enum para tarefas: `ABERTA`, `EM_ANDAMENTO`, `FINALIZADA`
 
-### 🔧 Atividades:
+### 🔧 Atividades - Dia 5
 
 - Atualizar o método `createTarefa()` para usar status padrão `ABERTA`
 
-### 🧪 Exercício:
+### 🧪 Exercício - Dia 5
 
 - Criar um método `filtrarTarefasPorStatus(status: string)`
 
@@ -148,7 +148,7 @@ Adicionar lógica para `POST /tarefas` com DTO
 
 ## 🗓️ Dia 6 – Módulos
 
-### 📚 Conteúdo:
+### 📚 Conteúdo - Dia 6
 
 - Entendendo o que são módulos
 
@@ -156,7 +156,7 @@ Adicionar lógica para `POST /tarefas` com DTO
 
 - Reutilização de módulos em aplicações grandes
 
-### 🔧 Atividades:
+### 🔧 Atividades - Dia 6
 
 - Criar novo módulo para tarefas (caso não tenha sido criado junto com controller):
 
@@ -170,13 +170,13 @@ nest g module tarefas
 
 ## 🗓️ Dia 7 – Revisão e prática
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - Revisar: controller → chama → service → retorna resposta
 
 - Criar mini projeto de API de tarefas (em memória, sem banco de dados)
 
-### 🧪 Exercício final da semana:
+### 🧪 Exercício final da semana
 
 Criar uma API de tarefas com os seguintes endpoints:
 
@@ -192,7 +192,7 @@ Criar uma API de tarefas com os seguintes endpoints:
 
 ---
 
-### 📦 Pastas organizadas no final da semana:
+### 📦 Pastas organizadas no final da semana
 
 ```lua
 src/
@@ -217,7 +217,7 @@ src/
 
 ## 🗓️ Dia 8 – Pipes e validação de dados
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - O que são Pipes no Nest.js
 
@@ -225,7 +225,7 @@ src/
 
 - Usando `class-validator` e `class-transformer`
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Instalar os pacotes:
 
@@ -247,7 +247,7 @@ export class CreateTarefaDto {
 }
 ```
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 - Criar um `FilterDto` para buscar tarefas por `status` e `termo` com validação usando `@IsOptional()`.
 
@@ -255,19 +255,19 @@ export class CreateTarefaDto {
 
 ## 🗓️ Dia 9 – Pipes customizados
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - Criar um pipe de validação de status
 
 - Usar `@Param()` com pipes
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Criar `TarefaStatusValidationPipe`
 
 - Validar se `status` recebido é válido (enum)
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 - Adicionar pipe no endpoint `PATCH /tarefas/:id/status`
 
@@ -275,7 +275,7 @@ export class CreateTarefaDto {
 
 ## 🗓️ Dia 10 – Exception Filters (tratamento de erros)
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - O que são filtros de exceção
 
@@ -283,7 +283,7 @@ export class CreateTarefaDto {
 
 - Criar filtro global customizado (opcional)
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Criar exceção personalizada se uma tarefa não for encontrada.
 
@@ -291,7 +291,7 @@ export class CreateTarefaDto {
 throw new NotFoundException(`Tarefa com ID "${id}" não encontrada`);
 ```
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 Adicionar exceções personalizadas para os métodos `GET`, `DELETE` e `UPDATE`.
 
@@ -299,7 +299,7 @@ Adicionar exceções personalizadas para os métodos `GET`, `DELETE` e `UPDATE`.
 
 ## 🗓️ Dia 11 – Middleware
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - O que é middleware no Nest.js
 
@@ -307,7 +307,7 @@ Adicionar exceções personalizadas para os métodos `GET`, `DELETE` e `UPDATE`.
 
 - Aplicar middleware globalmente ou por rota
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Criar middleware de log:
 
@@ -317,7 +317,7 @@ nest g middleware logger
 
 - Aplicar nas rotas de tarefas
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 - Adicionar timestamp e rota acessada no log.
 
@@ -325,7 +325,7 @@ nest g middleware logger
 
 ## 🗓️ Dia 12 – Guards (autenticação básica)
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - O que são guards
 
@@ -333,11 +333,11 @@ nest g middleware logger
 
 - Usar `@UseGuards()` no controller
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Criar `AuthGuard` que verifica se `authorization` tem token `meutoken123`.
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 - Proteger rota de criação de tarefas com guard.
 
@@ -345,7 +345,7 @@ nest g middleware logger
 
 ## 🗓️ Dia 13 – Configuração com .env e instalação de TypeORM
 
-## 📚 Conteúdo:
+## 📚 Conteúdo
 
 - Uso do pacote `@nestjs/config`
 
@@ -357,7 +357,7 @@ nest g middleware logger
 npm install --save @nestjs/typeorm typeorm pg
 ```
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Criar `.env`:
 
@@ -371,7 +371,7 @@ DB_NAME=nest_tarefas
 
 - Configurar `TypeOrmModule.forRootAsync()` em `app.module.ts`
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 - Simular a conexão (sem entidades ainda), garantir que app inicia com sucesso.
 
@@ -379,7 +379,7 @@ DB_NAME=nest_tarefas
 
 ## 🗓️ Dia 14 – Preparar para uso do banco com TypeORM
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - O que são entidades
 
@@ -389,7 +389,7 @@ DB_NAME=nest_tarefas
 
 - Visão geral de `repository`, `migration`, `relation`
 
-## 🔧 Atividades:
+## 🔧 Atividades
 
 - Criar a primeira entidade `TarefaEntity` com os campos `id`, ``titulo``, ``descricao``, ``status``, ``dataCriacao``.
 
@@ -415,7 +415,7 @@ export class Tarefa {
 
 ---
 
-### 🧠 Ao final da semana, você terá:
+### 🧠 Ao final da semana, você terá
 
 ✅ API validando dados
 ✅ Erros tratados corretamente
@@ -433,7 +433,7 @@ export class Tarefa {
 
 ## 🗓️ Dia 15 – Integrar TypeORM com Nest.js
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - Relembrar `.env` com variáveis de conexão
 
@@ -441,7 +441,7 @@ export class Tarefa {
 
 - Conectar ao PostgreSQL (ou outro)
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Configurar `TypeOrmModule.forRoot()` com dados do `.env`
 
@@ -466,7 +466,7 @@ export class TarefaEntity {
 }
 ```
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 - Criar repositório de tarefas e salvar tarefa no banco.
 
@@ -474,7 +474,7 @@ export class TarefaEntity {
 
 ## 🗓️ Dia 16 – CRUD com banco de dados
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - Criar ``TarefaRepository``
 
@@ -492,7 +492,7 @@ Implementar os métodos: ``findAll``, ``findById``, ``create``, ``delete``, ``up
 
 ## 🗓️ Dia 17 – Autenticação com JWT (parte 1)
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - Criar módulo de usuários
 
@@ -504,7 +504,7 @@ Implementar os métodos: ``findAll``, ``findById``, ``create``, ``delete``, ``up
 npm install @nestjs/jwt @nestjs/passport passport passport-jwt bcryptjs
 ```
 
-## 🔧 Atividades:
+## 🔧 Atividades
 
 - Criar ``UsuarioModule``, ``UsuarioService``, ``UsuarioEntity``
 
@@ -514,7 +514,7 @@ npm install @nestjs/jwt @nestjs/passport passport passport-jwt bcryptjs
 
 ## 🗓️ Dia 18 – Autenticação com JWT (parte 2)
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - Criar ``AuthModule`` e serviço de autenticação
 
@@ -522,13 +522,13 @@ npm install @nestjs/jwt @nestjs/passport passport passport-jwt bcryptjs
 
 - Criar Guard com Passport para proteger rotas
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Criar rota ``POST /auth/login``
 
 Implementar ``JwtStrategy`` para validar token
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 - Proteger rotas de tarefas com ``@UseGuards(AuthGuard())``
 
@@ -536,13 +536,13 @@ Implementar ``JwtStrategy`` para validar token
 
 ## 🗓️ Dia 19 – Relacionamentos com TypeORM
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - Criar relacionamento ``User → Tarefa`` (1:N)
 
 - Usar ``@ManyToOne()`` e ``@OneToMany()``
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Alterar entidade ``TarefaEntity`` para ter um campo ``usuario``
 
@@ -553,7 +553,7 @@ usuario: UsuarioEntity;
 
 - Ajustar criação de tarefas para registrar o usuário dono da tarefa
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 - Buscar tarefas de um usuário logado (usando o token JWT)
 
@@ -561,7 +561,7 @@ usuario: UsuarioEntity;
 
 ## 🗓️ Dia 20 – Filtros, DTOs avançados e refatorações
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - Criar DTO para login e registro
 
@@ -569,13 +569,13 @@ usuario: UsuarioEntity;
 
 - Filtros com parâmetros opcionais
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Refatorar rotas para usar DTOs consistentes
 
 - Criar filtros por status, título e usuário
 
-### 🧪 Exercício:
+### 🧪 Exercício
 
 - Adicionar ``GET /tarefas?status=ABERTA&busca=texto`` usando query params
 
@@ -583,7 +583,7 @@ usuario: UsuarioEntity;
 
 ## 🗓️ Dia 21 – Finalizando o projeto
 
-### 📚 Conteúdo:
+### 📚 Conteúdo
 
 - Testar todas as rotas
 
@@ -591,7 +591,7 @@ usuario: UsuarioEntity;
 
 - Preparar deploy local (opcional)
 
-### 🔧 Atividades:
+### 🔧 Atividades
 
 - Instalar Swagger:
 
@@ -601,7 +601,7 @@ npm install --save @nestjs/swagger swagger-ui-express
 
 - Documentar rotas com decorators ``@ApiTags``, ``@ApiBody``, ``@ApiResponse``, etc.
 
-### 📦 Estrutura do projeto ao final da 3ª semana:
+### 📦 Estrutura do projeto ao final da 3ª semana
 
 ```cpp
 src/
@@ -625,7 +625,7 @@ src/
 
 ---
 
-### ✅ Ao final da 3ª semana, você terá:
+### ✅ Ao final da 3ª semana, você terá
 
 - API com banco de dados real (PostgreSQL ou outro)
 
@@ -640,6 +640,7 @@ src/
 - Documentação com Swagger
 
 #
+
 ---
 ---
 
@@ -724,7 +725,7 @@ Você verá algo como:
 [Nest] 3456  - 23/06/2025, 14:00:01   [NestApplication] Nest application successfully started on port 3000
 ```
 
-Acesse http://localhost:3000 e verá a mensagem:
+Acesse <http://localhost:3000> e verá a mensagem:
 
 ```bash
 Hello World!
@@ -764,6 +765,5 @@ Verifique no terminal a saída do console.
 ✔ Como modificar o ponto de entrada e testar algo no console
 
 #
+
 ---
-
-
